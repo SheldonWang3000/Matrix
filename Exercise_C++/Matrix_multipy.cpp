@@ -11,7 +11,6 @@ void new_matrix(int **&A, int N)
 	{
 		A[i] = new int[N];
 	}
-	// cout << "test" << endl;
 }
 
 void output_matrix(int **&A, int N)
