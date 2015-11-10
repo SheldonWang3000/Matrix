@@ -7,7 +7,7 @@ using namespace std;
 
 int main()
 {
-	int N_List[] = { 128, 256, 512, 1024, 2048 };
+	int N_List[] = { 3, 128, 256, 512, 1024, 2048 };
 	for each (auto N in N_List)
 	{
 		ofstream file;
@@ -21,7 +21,7 @@ int main()
 		{
 			for (int j = 0; j < N; ++j)
 			{
-				int tmp = rand() % 10;
+				int tmp = rand() % 2;
 				file << tmp << ' ';
 			}
 			file << endl;
