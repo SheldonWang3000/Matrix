@@ -1,3 +1,4 @@
+*.txt
 *.tlog
 *.idb
 *.opensdf
@@ -6,3 +7,4 @@
 *.vcxproj
 *.filters
 *.TMP
+*.max
