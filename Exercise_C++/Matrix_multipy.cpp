@@ -217,7 +217,7 @@ int main()
 {
 	int N_List[] = { 128, 256, 512, 1024, 2048 };
 	//int N_List[] = { 2048 };
-	int multipy_times[] = { 1, 8, 64, 512, 4096 };
+	int multipy_times[] = { 1, 8, 64 };
 	//int multipy_times[] = { 4096 };
 	time_t start, stop;
 	void(*f[5]) (int**, int**, int**, int);
