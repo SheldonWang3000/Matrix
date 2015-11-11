@@ -12,12 +12,6 @@
 
 using namespace std;
 int data[MAXSIZE];
-//struct timeeval
-//{
-//    /* data */
-//    long tv_sec; /*秒*/
-//    long tv_usec; /*微秒*/
-//};
 
 void new_data()
 {
@@ -45,18 +39,14 @@ int loop(int size, int stride)
 double get_readrate(int size, int stride)
 {
 	int t = 10;
-    //struct timeeval start, end;
 	LARGE_INTEGER start, end, tc;
     loop(size, stride);
 	QueryPerformanceFrequency(&tc);
 	QueryPerformanceCounter(&start);
-    //gettimeofday(&start, NULL);
 	for (int i = 0; i < t; ++ i)
 		loop(size, stride);
 	QueryPerformanceCounter(&end);
-    //gettimeofday(&end, NULL);
     double set_size = (double)(size * sizeof(int) / stride) / (1024 * 1024);
-    //double times = end.tv_sec - start.tv_sec + (end.tv_usec - start.tv_usec) / 1000000.0;
 	double times = (end.QuadPart - start.QuadPart) * 1.0 / tc.QuadPart;
     //printf("%.10f %d\n", times, result);
 	return set_size * t / times;

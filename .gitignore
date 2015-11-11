@@ -3,3 +3,6 @@
 *.opensdf
 *.sdf
 *.lastbuildstate
+*.vcxproj
+*.filters
+*.TMP
