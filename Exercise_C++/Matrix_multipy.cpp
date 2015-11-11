@@ -177,6 +177,7 @@ void M3(int **A, int **B, int **C, int N)
 			}
 		}
 	}
+	delete_matrix(tmp, N);
 }
 
 void M4(int **A, int **B, int **C, int N)
@@ -210,7 +211,7 @@ void M4(int **A, int **B, int **C, int N)
 			}
 		}
 	}
-	
+	delete_matrix(tmp, N);
 }
 int main()
 {
