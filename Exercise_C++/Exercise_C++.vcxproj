@@ -11,7 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Matrix_multipy.cpp" />
+    <ClCompile Include="cache_test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{EB071C7A-913E-408C-A670-D8137DFAFD22}</ProjectGuid>
